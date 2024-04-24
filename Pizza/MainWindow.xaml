@@ -1,0 +1,34 @@
+﻿<Window x:Class="Pizza.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pizza"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Label Content="Just order some shit already" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top"/>
+        <StackPanel>
+            
+            <RadioButton Content="Margaréta" x:Name="margareta" Tag="2000" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428" Margin="0,70,0,0"/>
+            <RadioButton Content="Kukoricás" x:Name="kukoricas" Tag="2000" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
+            <RadioButton Content="Sonkás" x:Name="sonkas" Tag="2000" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
+            <RadioButton Content="Kolbászos" x:Name="kolbaszos" Tag="2100" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
+            <RadioButton Content="Bolognai" x:Name="bolognai" Tag="2400" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
+            <RadioButton Content="Baconos" x:Name="baconos" Tag="2400" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
+            <RadioButton Content="Sonkás-Gombás"  x:Name="sonka_gombas" Tag="2500" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
+            <RadioButton Content="Sonkás-Kukoricás" x:Name="sonka_kukoricas" Tag="2500" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
+            <RadioButton Content="Retro" x:Name="retro" Tag="2500" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
+            <TextBlock  x:Name="sumTextBlock" Width="300"><Run Language="hu-hu" Text="nigger"/></TextBlock>
+        </StackPanel>
+
+
+        <CheckBox Content="Sonka" HorizontalAlignment="Left" Margin="508,84,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Gomba" HorizontalAlignment="Left" Margin="508,99,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Kukorica" HorizontalAlignment="Left" Margin="508,115,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Bacon" HorizontalAlignment="Left" Margin="508,130,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Szalámi" HorizontalAlignment="Left" Margin="508,145,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
