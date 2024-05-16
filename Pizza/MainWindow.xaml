@@ -11,24 +11,25 @@
         <Label Content="Order something already" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top"/>
         <StackPanel>
             
-            <RadioButton Content="Margaréta" x:Name="margareta" Tag="2000" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428" Margin="0,70,0,0"/>
-            <RadioButton Content="Kukoricás" x:Name="kukoricas" Tag="2000" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
-            <RadioButton Content="Sonkás" x:Name="sonkas" Tag="2000" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
-            <RadioButton Content="Kolbászos" x:Name="kolbaszos" Tag="2100" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
-            <RadioButton Content="Bolognai" x:Name="bolognai" Tag="2400" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
-            <RadioButton Content="Baconos" x:Name="baconos" Tag="2400" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
-            <RadioButton Content="Sonkás-Gombás"  x:Name="sonka_gombas" Tag="2500" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
-            <RadioButton Content="Sonkás-Kukoricás" x:Name="sonka_kukoricas" Tag="2500" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
-            <RadioButton Content="Retro" x:Name="retro" Tag="2500" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
+            <RadioButton Content="Margaréta" x:Name="Margaretas" Tag="2000" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428" Margin="0,70,0,0"/>
+            <RadioButton Content="Kukoricás" x:Name="Kukoricas" Tag="2000" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
+            <RadioButton Content="Sonkás" x:Name="Sonkas" Tag="2000" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
+            <RadioButton Content="Kolbászos" x:Name="Kolbaszos" Tag="2100" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
+            <RadioButton Content="Bolognai" x:Name="Bolognais" Tag="2400" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
+            <RadioButton Content="Baconos" x:Name="Baconos" Tag="2400" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
+            <RadioButton Content="Sonkás-Gombás"  x:Name="Sonkas_Gombas" Tag="2500" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
+            <RadioButton Content="Sonkás-Kukoricás" x:Name="Sonkas_Kukoricas" Tag="2500" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
+            <RadioButton Content="Retro" x:Name="Retros" Tag="2500" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
             <TextBlock  x:Name="sumTextBlock" Width="300" Text="Végösszeg:"/>
+            <Button Content="Megrendelés" Width="88" Click="Order_Submitted"/>
         </StackPanel>
 
 
-        <CheckBox Content="Sonka" Tag="300" HorizontalAlignment="Left" Margin="508,84,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
-        <CheckBox Content="Gomba" Tag="300" HorizontalAlignment="Left" Margin="508,99,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
-        <CheckBox Content="Kukorica" Tag="300" HorizontalAlignment="Left" Margin="508,115,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
-        <CheckBox Content="Bacon" Tag="300" HorizontalAlignment="Left" Margin="508,130,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
-        <CheckBox Content="Szalámi" Tag="300" HorizontalAlignment="Left" Margin="508,145,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox Content="Sonka" Tag="300" x:Name="sonka" HorizontalAlignment="Left" Margin="508,84,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox Content="Gomba" Tag="300" x:Name="gomba" HorizontalAlignment="Left" Margin="508,99,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox Content="Kukorica" Tag="300" x:Name="kukorica" HorizontalAlignment="Left" Margin="508,115,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox Content="Bacon" Tag="300" x:Name="bacon" HorizontalAlignment="Left" Margin="508,130,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox Content="Szalámi" Tag="300" x:Name="szalami" HorizontalAlignment="Left" Margin="508,145,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
 
     </Grid>
 </Window>

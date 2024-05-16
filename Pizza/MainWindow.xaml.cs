@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -13,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace Pizza
 {
     /// <summary>
@@ -21,6 +24,7 @@ namespace Pizza
     public partial class MainWindow : Window
     {
         private int sum = 0;
+        private List<string> order = new List<string>();
 
         public MainWindow()
         {
@@ -31,6 +35,7 @@ namespace Pizza
         {
             if (sender is RadioButton radioButton && radioButton.Tag is string value)
             {
+                order.Add(radioButton.Name);
                 sum += Convert.ToInt32(value);
                 UpdateSum(sender, e);
             }
@@ -40,6 +45,7 @@ namespace Pizza
         {
             if (sender is RadioButton radioButton && radioButton.Tag is string value)
             {
+                order.Remove(radioButton.Name);
                 sum -= Convert.ToInt32(value);
                 UpdateSum(sender, e);
             } 
@@ -49,6 +55,7 @@ namespace Pizza
         {
             if (sender is CheckBox checkbox && checkbox.Tag is string value)
             {
+                order.Add(checkbox.Name);
                 sum += Convert.ToInt32(value);
                 UpdateSum(sender, e);
             }
@@ -58,16 +65,55 @@ namespace Pizza
         {
             if (sender is CheckBox checkbox && checkbox.Tag is string value)
             {
+                order.Remove(checkbox.Name);
                 sum -= Convert.ToInt32(value);
                 UpdateSum(sender, e);
             }
         }
 
-        private void UpdateSum(object sender, RoutedEventArgs e)
+        private async void Order_Submitted(object sender, RoutedEventArgs e)
         {
-            // Update sum display or perform any other action
+            order.Add(sum.ToString());
+            string folderPath = @"..\..\order\";
+            string filePath = System.IO.Path.Combine(folderPath, "order.csv");
+
+            try
+            {
+                // Write list to CSV file
+               WriteListToCsv(order, filePath);
+
+                MessageBox.Show("CSV file saved successfully.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+        }
+
+        private void WriteListToCsv(List<string> stringList, string filePath)
+        {
+            
+            StringBuilder csvContent = new StringBuilder();
+
+            
+            foreach (string item in stringList)
+            {
+                csvContent.AppendLine(item);
+            }
+
+            
+            File.WriteAllText(filePath, csvContent.ToString());
+        }
+            private void UpdateSum(object sender, RoutedEventArgs e)
+        {
+            // Update sum 
+
             sumTextBlock.Text = $"Végösszeg: {sum}";
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
