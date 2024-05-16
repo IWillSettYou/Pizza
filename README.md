@@ -1,2 +1,3 @@
 # Pizza
-some shit
+Pizza project for school
+
