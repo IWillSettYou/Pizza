@@ -20,7 +20,7 @@
             <RadioButton Content="Sonkás-Gombás"  x:Name="sonka_gombas" Tag="2500" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
             <RadioButton Content="Sonkás-Kukoricás" x:Name="sonka_kukoricas" Tag="2500" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
             <RadioButton Content="Retro" x:Name="retro" Tag="2500" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428"/>
-            <TextBlock  x:Name="sumTextBlock" Width="300"><Run Language="hu-hu" Text="nigger"/></TextBlock>
+            <TextBlock  x:Name="sumTextBlock" Width="300"><Run Language="hu-hu" Text=""/></TextBlock>
         </StackPanel>
 
 
