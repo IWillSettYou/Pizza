@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
 
-        <Label Content="Just order some shit already" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Order something already" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top"/>
         <StackPanel>
             
             <RadioButton Content="Margaréta" x:Name="margareta" Tag="2000" Checked="RadioButton_Checked" Unchecked="RadioButton_Unchecked" Width="428" Margin="0,70,0,0"/>
