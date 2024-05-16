@@ -1,2 +1,4 @@
 # Pizza
-some shit
+Pizza roject for school
+dont question anything
+discretion is advised
