@@ -45,6 +45,24 @@ namespace Pizza
             } 
         }
 
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            if (sender is CheckBox checkbox && checkbox.Tag is string value)
+            {
+                sum += Convert.ToInt32(value);
+                UpdateSum(sender, e);
+            }
+        }
+
+        private void CheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            if (sender is CheckBox checkbox && checkbox.Tag is string value)
+            {
+                sum -= Convert.ToInt32(value);
+                UpdateSum(sender, e);
+            }
+        }
+
         private void UpdateSum(object sender, RoutedEventArgs e)
         {
             // Update sum display or perform any other action

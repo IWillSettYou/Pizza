@@ -24,11 +24,11 @@
         </StackPanel>
 
 
-        <CheckBox Content="Sonka" HorizontalAlignment="Left" Margin="508,84,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="Gomba" HorizontalAlignment="Left" Margin="508,99,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="Kukorica" HorizontalAlignment="Left" Margin="508,115,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="Bacon" HorizontalAlignment="Left" Margin="508,130,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="Szalámi" HorizontalAlignment="Left" Margin="508,145,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Sonka" Tag="300" HorizontalAlignment="Left" Margin="508,84,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox Content="Gomba" Tag="300" HorizontalAlignment="Left" Margin="508,99,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox Content="Kukorica" Tag="300" HorizontalAlignment="Left" Margin="508,115,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox Content="Bacon" Tag="300" HorizontalAlignment="Left" Margin="508,130,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <CheckBox Content="Szalámi" Tag="300" HorizontalAlignment="Left" Margin="508,145,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
 
     </Grid>
 </Window>
